@@ -10,7 +10,7 @@ MANAGE_FILE=${MANAGE_FILE:2}
 cat <<EOF
 ---
 config_vars:
-
+  PATH: "fletcher/multimarkdown:/usr/bin:/bin"
 EOF
 
 

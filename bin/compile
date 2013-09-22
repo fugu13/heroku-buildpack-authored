@@ -17,6 +17,15 @@ ROOT_DIR=$(dirname $BIN_DIR)
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+MULTIMARKDOWN_BINARY="https://s3.amazonaws.com/fugu13-heroku-binaries/MultiMarkdown-4.tgz"
+MULTIMARKDOWN_VENDOR="fletcher/multimarkdown"
+mkdir -p $1/$MULTIMARKDOWN_VENDOR
+curl $MULTIMARKDOWN_BINARY -o - | tar -xz -C $1/$MULTIMARKDOWN_VENDOR -f -
+
+
+
+
+
 CACHED_DIRS=".heroku"
 
 # Static configurations for virtualenv caches.
