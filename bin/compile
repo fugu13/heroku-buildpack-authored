@@ -231,7 +231,7 @@ bpwatch start collectstatic
   source $BIN_DIR/steps/collectstatic
 bpwatch stop collectstatic
 
-/app/.heroku/python/bin/python -c "import sys; import codecs; sys.stdout = codecs.getwriter("utf-8")(sys.stdout); py3 = sys.version_info[0] > 2; u = __import__('urllib.request' if py3 else 'urllib', fromlist=1); exec(u.urlopen('http://status.calibre-ebook.com/linux_installer').read()); print getattr(sys.stdout, 'encoding', 'utf-8'); main(install_dir=str('/app'))"
+/app/.heroku/python/bin/python -c "import sys; import codecs; sys.stdout = codecs.getwriter('utf-8')(sys.stdout); py3 = sys.version_info[0] > 2; u = __import__('urllib.request' if py3 else 'urllib', fromlist=1); exec(u.urlopen('http://status.calibre-ebook.com/linux_installer').read()); print getattr(sys.stdout, 'encoding', 'utf-8'); main(install_dir=str('/app'))"
 
 
 # ### Finalize
