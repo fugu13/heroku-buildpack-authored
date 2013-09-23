@@ -242,7 +242,7 @@ PYTHONIOENCODING=utf-8 /app/.heroku/python/bin/python -c "import sys; py3 = sys.
 #
 
 # Set context environment variables.
-set-env PATH '$HOME/fletcher/multimarkdown:$HOME/.heroku/python/bin:$PATH'
+set-env PATH '$HOME/built/calibre/bin:$HOME/fletcher/multimarkdown:$HOME/.heroku/python/bin:$PATH'
 set-env PYTHONUNBUFFERED true
 set-env PYTHONHOME /app/.heroku/python
 set-default-env LIBRARY_PATH /app/.heroku/vendor/lib
